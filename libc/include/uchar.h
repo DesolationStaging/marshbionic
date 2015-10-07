@@ -37,6 +37,9 @@ __BEGIN_DECLS
 #define __STD_UTF_16__ 1
 #define __STD_UTF_32__ 1
 
+#define char16_t uint16_t
+#define char32_t uint32_t
+
 size_t c16rtomb(char* __restrict, char16_t, mbstate_t* __restrict);
 size_t c32rtomb(char* __restrict, char32_t, mbstate_t* __restrict);
 size_t mbrtoc16(char16_t* __restrict,
